@@ -1,0 +1,59 @@
+*{
+    color:black !important;
+    opacity:100% !important;
+    margin:0.1rem !important;
+    padding:0.1rem !important;
+    font-family: sans-serif !important;
+}
+button{
+    border:2px solid black !important;
+}
+#navbar,#hamburgerlinks{
+    display: none !important;
+}
+#mainscreen{
+    height: 30rem !important;
+}
+#star-container>img{
+    width:2rem !important;
+    height: 2rem !important;
+}
+img{
+    width:10rem !important;
+    height: 10rem !important;
+}
+#offers{
+    gap:0.5rem;
+}
+figcaption{
+    font-size:1rem;
+}
+
+form{
+    border:2px solid black !important;
+    gap:0 !important; 
+}
+table{
+    border:2px solid black !important;
+}
+img{
+    border:1px solid black !important;
+}
+video{
+    display: none !important;
+}
+#videocaption{
+    display: none !important;
+}
+
+#galery{
+    display: none;
+}
+
+#socials img,#phone>img{
+    width: 3rem !important;
+    height: 3rem !important;
+    border:none !important;  
+    filter:invert(1) !important;
+}
+

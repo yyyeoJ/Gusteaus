@@ -1,0 +1,246 @@
+html{
+    scroll-behavior: smooth !important;
+}
+
+/*navbar*/
+
+
+#navbar{
+    background-color: #c23137;
+    height: 4rem;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+}
+
+#logo{
+    margin-left: 1rem;
+    height:3.5rem;
+    cursor: pointer;
+}
+#desktopnav{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:2rem;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-right: 6rem;
+    font-weight: bold;
+}
+#desktopnav>div>a{
+    transition:0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 15px;
+    padding:0.7rem;
+    
+}
+#desktopnav>div>a:hover{
+    background-color: white;
+    color:#c23137;
+}
+
+.selected{
+    transition:0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 15px;
+    padding:0.7rem;
+    background-color: white;
+    color:#c23137;
+}
+
+#hamburgernav{
+    display:none;
+    padding-right: 5rem;
+    cursor: pointer;
+}
+#hamburgernav>img{
+    height: 1.5rem;
+    transition: 0.4s ease-in-out;
+}
+
+
+.clicked>:nth-child(1){
+    animation: forkforward 0.4s forwards;
+}
+.clicked>:nth-child(2){
+    animation: spoonforward 0.4s forwards;
+}
+.clicked>:nth-child(3){
+    animation: knifeforward 0.4s forwards;
+}
+
+.unclicked>:nth-child(1){
+    animation: forkbackward 0.4s forwards;
+}
+.unclicked>:nth-child(2){
+    animation: spoonbackward 0.4s forwards;
+}
+.unclicked>:nth-child(3){
+    animation: knifebackward 0.4s forwards;
+}
+
+@keyframes forkforward{
+    50%{transform: translateY(1.8rem)}
+    100%{transform: translateY(1.8rem) rotate(-45deg)}
+}
+@keyframes forkbackward{
+    0%{transform: translateY(1.8rem) rotate(-45deg)}
+    50%{transform: translateY(1.8rem)}
+    100%{transform: translateY(0rem)}
+}
+
+@keyframes spoonforward{
+    100%{opacity:0}
+}
+@keyframes spoonbackward{
+    0%{opacity:0}
+    100%{opacity: 100}
+}
+
+@keyframes knifeforward{
+    50%{transform: translateY(-1.5rem)}
+    100%{transform: translateY(-1.5rem) rotate(45deg)}
+}
+@keyframes knifebackward{
+    0%{transform: translateY(-1.5rem) rotate(45deg)}
+    50%{transform: translateY(-1.5rem)}
+    100%{transform: translateY(0rem)}
+}
+
+#skip{
+    color:transparent;
+}
+#skip:focus{
+    border:1px solid white;
+    color:white;
+}
+
+#hamburgerlinks{
+    height: auto;
+    position: fixed;
+    top:8vh;
+    width:100%;
+    z-index:2;
+    transition: 0.4s ease-in-out;
+    display: none;
+}
+#hamburgerlinks>nav{
+    color:white;
+    background-color: #d44146;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    text-align: start;
+    gap:3rem;
+    font-size:3rem;
+    font-weight: bold;
+
+}
+#hamburgerlinks>nav>div{
+    padding:0.5rem;
+}
+
+#blur{
+
+    background-color: rgba(0, 0, 0, 0.63);
+    width: 100%;
+    height: 200vh;
+    display: none;
+}
+
+.hidden{
+    top:-100vh !important;
+    opacity: 0;
+}
+.scrolllock{
+    overflow: hidden;
+}
+
+
+/*tablet*/
+@media (max-width:1270px){
+    #logo{
+        height: 7rem;
+    }
+    nav a{
+        font-size: 3rem !important;
+    }
+    #navbar{
+        height: 8rem;
+    }
+    #desktopnav{
+        display: none;
+    }
+    #hamburgernav{
+        display:flex;
+        flex-direction: column;
+        gap:0.3rem;
+    }
+    #hamburgerlinks{
+        display: block !important;
+    }
+    #skip{
+        display: none;
+    }
+}
+
+/*telefon*/
+@media (max-width:700px){
+    #navbar{
+        height: 5rem;
+    }
+    #logo{
+        height: 3.5rem;
+    }
+    #hamburgernav{
+        transform: scale(0.8);
+    }
+    @keyframes forkforward{
+        50%{transform: translateY(1.3rem)}
+        100%{transform: translateY(1.3rem) rotate(-45deg)}
+    }
+    @keyframes forkbackward{
+        0%{transform: translateY(1.3rem) rotate(-45deg)}
+        50%{transform: translateY(1.3rem)}
+        100%{transform: translateY(0rem)}
+    }
+    
+    @keyframes knifeforward{
+        50%{transform: translateY(-1rem)}
+        100%{transform: translateY(-1rem) rotate(45deg)}
+    }
+    @keyframes knifebackward{
+        0%{transform: translateY(-1rem) rotate(45deg)}
+        50%{transform: translateY(-1rem)}
+        100%{transform: translateY(0rem)}
+    }
+    #hamburgerlinks div{
+        font-size: 2rem;
+    }
+    #hamburgerlinks>nav{
+        gap:1rem;
+    }
+    nav a{
+        font-size: 1.7rem !important;
+    }
+    #hamburgernav>img{
+        height: 1rem;
+    }
+    #hamburgernav{
+        padding-right:1rem;
+    }
+    #skip{
+        display: none;
+    }
+
+}

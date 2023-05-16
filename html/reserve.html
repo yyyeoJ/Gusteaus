@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reserve.css">
+    <title>Gusteau's | Asztalfoglalás</title>
+    <link rel="icon" href="../assets/icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+</head>
+<body>
+    
+    <header id="navbar">
+        <a href="../index.html"><img id="logo" src="../assets/logo.png" alt="logo"></a>
+        <a href="#main" id="skip">Ugrás a tartalomhoz</a>
+
+
+        <nav id="desktopnav">
+            <div class="selected">Asztalfoglalás</div>
+            <div><a href="./menu.html">Étlap</a></div>
+            <div><a href="./about.html">Rólunk</a></div>
+            <div><a href="./contact.html">Kapcsolat</a></div>
+        </nav>
+
+        <div id="hamburgernav">
+            <img id="fork" src="../assets/fork.png" alt="">
+            <img id="spoon" src="../assets/spoon.png" alt="">
+            <img id="knife" src="../assets/knife.png" alt="">
+        </div>
+    </header>
+    <div id="hamburgerlinks" class="hidden">
+        <nav>
+            <div class="selected"><a href="../html/reserve.html">Asztalfoglalás</a></div>
+            <div><a href="../html/menu.html">Étlap</a></div>
+            <div><a href="./about.html">Rólunk</a></div>
+            <div><a href="./contact.html">Kapcsolat</a></div>
+        </nav>
+        <div id="blur"></div>
+    </div>
+
+
+
+    <div id="main">
+        <h2 tabindex="0">Asztalfoglalás</h2>
+
+        <div id="container">
+            <img src="../assets/fork.png" alt="függőleges villa">
+            <form method="post" action="mailto:someone@example.com">
+                <label tabindex="0" for="nameinput">Név:</label>
+                <span>
+                    <input required placeholder="Keresztnév" type="text" id="nameinput">
+                    <input required placeholder="Vezetéknév" type="text" id="nameinput2">
+                </span>
+    
+                <label tabindex="0" for="emailinput">E-mail:</label>
+                <input required placeholder="email@domain.com" type="email" id="emailinput">
+    
+                <label tabindex="0" for="phoneinput">Telefonszám: </label>
+                <input id="phoneinput" required placeholder="06 12 34 5678" type="tel" pattern="[0-9]{2} [0-9]{2} [0-9]{3} [0-9]{4}">
+    
+                <label tabindex="0" for="guestnumberinput">Hány főre?</label>
+                <input required value="1" id="guestnumberinput" type="number" min="1" max="12">
+    
+                <label tabindex="0" for="dateinput">Dátum:</label>
+                <span>
+                    <input id="dateinput" type="date">
+                    <select title="time" name="times" id="times">
+                        <option value="10:00">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                        <option value="20">20:00</option>
+                        <option value="21">21:00</option>
+                      </select>
+                </span>
+    
+                <label tabindex="0" for="comment">Megjegyzés:</label>
+                <textarea id="comment" cols="30" rows="3"></textarea>
+                
+                <p tabindex="0">Asztal típusa:</p>
+                
+                <div id="radiobuttons">
+                    
+                    <input tabindex="0" checked type="radio" id="indoor" name="radio" value="indoor">
+                    <label tabindex="0" for="indoor">Beltéri:</label><br>
+        
+                    <input tabindex="0" type="radio" id="outdoor" name="radio" value="outdoor">
+                    <label tabindex="0" for="outdoor">Terasz:</label><br>
+    
+                </div>
+    
+                <span id="checkboxspan">
+                    <input tabindex="0" required type="checkbox" id="checkbox">
+                    <label tabindex="0" for="checkbox">Elolvastam és megértettem a foglalási feltételeket*</label>
+                </span>
+    
+                <span id="buttons">
+                    <button type="submit">Foglalás</button>
+                    <button type="reset">Visszaállít</button>
+                </span>
+            </form>
+            <img src="../assets/spoon.png" alt="függőleges kanál">
+        </div>
+        
+    </div>
+
+    
+    <script src="../main.js"></script>
+</body>
+</html>

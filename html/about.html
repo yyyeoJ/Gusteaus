@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <title>Gusteau's | Rólunk</title>
+    <link rel="icon" href="../assets/icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/print.css" media="print">
+</head>
+<body>
+    
+    <header id="navbar">
+        <a href="../index.html"><img id="logo" src="../assets/logo.png" alt="logo"></a>
+        <a href="#main" id="skip">Ugrás a tartalomhoz</a>
+
+        <nav id="desktopnav">
+            <div><a href="./reserve.html">Asztalfoglalás</a></div>
+            <div><a href="../html/menu.html">Étlap</a></div>
+            <div class="selected">Rólunk</div>
+            <div><a href="./contact.html">Kapcsolat</a></div>
+        </nav>
+
+        <div id="hamburgernav">
+            <img id="fork" src="../assets/fork.png" alt="">
+            <img id="spoon" src="../assets/spoon.png" alt="">
+            <img id="knife" src="../assets/knife.png" alt="">
+        </div>
+    </header>
+    <div id="hamburgerlinks" class="hidden">
+        <nav>
+            <div><a href="../html/reserve.html">Asztalfoglalás</a></div>
+            <div><a href="../html/menu.html">Étlap</a></div>
+            <div class="selected"><a href="../html/about.html">Rólunk</a></div>
+            <div><a href="./contact.html">Kapcsolat</a></div>
+        </nav>
+        <div id="blur"></div>
+    </div>
+
+    <div id="main">
+
+        <div id="chefsword">
+            <img tabindex="0" src="../assets/gusteau.png" alt="Auguste Gusteau portré képe">
+            <h2 tabindex="0">Néhány szó a főszakácstól</h2>
+            <article tabindex="0">
+              <h3><i>"Főzni bárki tud..."</i></h3>
+              <p><i>A főzés egy művészet. Amikor találkozol valakivel, aki igazi művész a konyhában és a mesterségében, 
+                az egy gyönyörű dolog. Amikor elvesztem a hitemet a konyhában, mindig az jut eszembe, hogy talán a főzés lényege nem az,
+                 hogy valami szépet teremtsünk, hanem hogy kapcsolatot teremtsünk valakivel, hogy tápláljuk valaki más testét és lelkét, ahogyan azt a nagymamád tette, 
+                 ahogyan azt az anyád tette. Ahogyan az emberek azt tették az idők kezdete óta. Tehát emlékezz: 
+                 Főzni bárki tud, de csak a bátrak lehetnek nagyszerűek."
+                </i></p>
+                </article>
+                 <aside tabindex="0">-Auguste Gusteau</aside>
+    
+        </div>
+       
+        <div id="mission">
+            <h2 tabindex="0">Küldetésünk</h2>
+            <p tabindex="0">Hiszünk abban, hogy egy fantasztikus recept bárki konyhájából érkezhet, legyen az szakács vagy sem, célunk felkutatni ezeket a recepteket, és megmutatni a világnak, hogy a házias ízeknek is van helye a fine dining-ban</p>
+        </div>
+
+        <video controls poster="../assets/poster.png">
+            <source src="../assets/video.mp4" type="video/mp4"> 
+        </video>
+        <a href="./videocaption.xhtml" target="_blank" id="videocaption">Videó leírás</a>
+        <p tabindex="0"><i>"Nem mindenki lehet művész, de egy művész jöhet bárhonnan."</i></p>
+        <aside tabindex="0"><strong>-Anton Ego</strong></aside>
+        
+        <section id="galery">
+            <h2 tabindex="0">Galéria</h2>
+            <div class="container">
+            
+                <div class="slides">
+    
+                  <div class="slide">
+                    <img src="../assets/exterior.jpg" alt="étterem kívülről" />
+                  </div>
+    
+                  <div class="slide">
+                    <img src="../assets/interior.jpg" alt="étterem belülről" />
+                  </div>
+
+                  <div class="slide">
+                    <img src="../assets/bar.jpg" alt="koktél bár" />
+                  </div>
+    
+                  <div class="slide">
+                    <img src="../assets/terrace.jpg" alt="étterem terasz" />
+                  </div>
+    
+    
+                </div>
+    
+                <div class="slide-controls">
+                    <img tabindex="0" id="prev-btn" src="../assets/arrow1.svg" alt="balra mutató nyíl">
+                    <img tabindex="0" id="next-btn" src="../assets/arrow2.svg" alt="jobbra mutató nyíl">
+                </div>
+    
+            </div>
+        </section>
+        <a class="buttonlink" target="_blank" href="../html/reserve.html">Foglalj asztalt</a>
+
+       
+
+
+
+    </div>
+
+    
+    <script src="../main.js"></script>
+    <script src="../carousel.js"></script>
+</body>
+</html>

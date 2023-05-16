@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    background-color: #22262A;
+}
+
+a,a:link,a:visited,a:active{
+    text-decoration: none;
+    color:inherit;
+    font-size:1.5rem;
+    text-align: center;
+}
+
+.appear{
+    opacity:100 !important;
+    top:0rem !important;
+}
+
+#main{
+    min-height:100vh;
+    background-color: #22262A;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width:100% !important;
+    overflow-x:hidden;
+}
+
+button,.buttonlink{
+    margin-top:5rem;
+    outline: none;
+    width:20rem;
+    height: 4rem;
+    border-radius: 20px;
+    border:3px solid #c23137;
+    color:#c23137 !important;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    font-size:1.5rem;
+    font-weight: bold;
+    background-color: white;
+    opacity:0;
+    position: relative;
+    top:2rem;
+    
+}
+.buttonlink,button{
+    margin-top:2rem;
+    outline: none;
+    width:25rem;
+    height: 5rem;
+    border-radius: 20px;
+    border:4px solid #c23137;
+    font-size:2rem;
+    color:#c23137;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-size:2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2rem;
+}
+
+.buttonlink:hover,button:hover,.buttonlink:focus,button:focus{
+    transform: scale(1.1);
+}
+
+h1{
+    font-family: 'Yeseva One', cursive;
+    opacity:0;
+    position: relative;
+    top:2rem;
+    transition: 0.5s ease-in-out;
+}
+
+h2{
+    color:white;
+    margin-top:5rem;
+    margin-bottom:2rem;
+    font-size:3.5rem;
+    text-align: center;
+    font-family: 'Yeseva One', cursive;
+    opacity:0;
+    position: relative;
+    top:2rem;
+    transition: 0.5s ease-in-out;
+    width: 80vw;
+}
+
+h3{
+    color:rgb(232, 232, 232);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top:2rem;
+    font-size: 1.8rem;
+    margin-bottom:2rem;
+    margin-top:2rem;
+    text-align: center;
+}
+p{
+    color:rgb(232, 232, 232);
+    font-size:1.5rem;
+    opacity:0;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top:2rem;
+    line-height: 2.2rem;
+}
+
+figcaption{
+    color:rgb(232, 232, 232);
+    font-size:1.5rem;
+    margin-top:1rem;
+    text-align: center;
+}
+
+aside{
+    color:rgb(232, 232, 232);
+    font-size: 1.8rem;
+    margin-top:2rem;
+    opacity:0;
+    position: relative;
+    top:2rem;
+    transition: 0.5s ease-in-out;
+}
+
+article{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*tablet*/
+@media (max-width:1270px){
+    .buttonlink{
+        height: 7rem;
+        width: 25rem;
+        font-size: 2.2rem;
+    }
+    h2{
+        font-size:5rem;
+        margin:5rem 2rem 2rem 2rem;
+    }
+    article{
+        width: 80vw;
+    }
+
+
+}
+
+/*telefon*/
+@media (max-width:700px){
+    .buttonlink{
+        width: 15rem;
+        height: 5rem;
+        font-size:1.2rem;
+    }
+    h2{
+        font-size:2rem;
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+    h3{
+        font-size:1.5rem;
+    }
+    aside{
+        font-size:1.5rem;
+    }
+    p{
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+    article{
+        width: 90vw;
+    }
+
+}
+
